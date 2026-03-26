@@ -12,11 +12,28 @@ This project demonstrates a class-based logger that captures:
 
 It uses hook-based gradient capture and live Visdom plots on a simple MNIST CNN demo.
 
+---
+
+## Demo
+
+### 📊 Visdom Live Dashboard
+![Visdom Dashboard](docs/visdom-full.png)
+
+### 🖥️ Training Output
+![Training Logs](docs/training-output.png)
+
+### 🎥 Video Demo
+[▶️ Watch Demo](docs/demo.mp4)
+
+---
+
 ## Problem
 
 Manual logging is repetitive.
 
 When training PyTorch models, developers often have to write many explicit logging calls for every metric they want to track. This adds boilerplate, makes training code harder to maintain, and increases the chance of missing useful training statistics.
+
+---
 
 ## Solution
 
@@ -28,6 +45,8 @@ The logger:
 - computes and logs gradient norms automatically
 - sends metrics to Visdom for live visualization
 
+---
+
 ## Features
 
 - Automatic loss logging
@@ -37,6 +56,8 @@ The logger:
 - Minimal user code
 - MNIST demo with a small CNN
 - Live plots for training and validation metrics
+
+---
 
 ## Project Structure
 
@@ -49,5 +70,9 @@ auto-visdom-logger/
 │   └── train_mnist.py
 ├── utils/
 │   └── grad_utils.py
+├── docs/
+│   ├── visdom-full.png
+│   ├── training-output.png
+│   └── demo.mp4
 ├── README.md
 └── requirements.txt
